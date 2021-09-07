@@ -1,13 +1,13 @@
 function apagatela(){
     document.getElementById('divnome').style.display = 'none';
     document.getElementById('divpost').style.display = 'none';
-    document.getElementById('divalbun').style.display = 'none';
+    document.getElementById('divalbum').style.display = 'none';
     document.getElementById('divafazer').style.display = 'none';
 }
 function home(){
     document.getElementById('divnome').style.display = 'none';
     document.getElementById('divpost').style.display = 'none';
-    document.getElementById('divalbun').style.display = 'none';
+    document.getElementById('divalbum').style.display = 'none';
     document.getElementById('divafazer').style.display = 'none';
 }
 
@@ -28,19 +28,19 @@ document.querySelector("#Postagens tbody").innerHTML = postagem.join("");
 
 });}
 
-function albun(mostrar){
+function album(mostrar){
     apagatela()
     document.getElementById(mostrar).style = 'block';
 fetch('https://jsonplaceholder.typicode.com/albums')
   .then((response) => response.json())
-  .then((json) => {const albun  = json.map(Post =>{
+  .then((json) => {const album  = json.map(Post =>{
     return `<tr>
     <td>${Post.userId}</td>
     <td>${Post.id}</td>
     <td>${Post.title}</td>
 </tr>`;})
 
-document.querySelector("#albun tbody").innerHTML = albun.join("");
+document.querySelector("#album tbody").innerHTML = album.join("");
 
 });}
 

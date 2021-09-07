@@ -5,96 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padawan</title>
-    <link rel="stylesheet" href="">
-    <style>
-        h1{ text-align: center;}
-    </style>
+    <link rel="stylesheet" href="Estilo.css">
+
 </head>
 <body>
 
-    <h1>Iniciação Padawanica</h1>
+    <h1 style="color: gold;"><img src="icone/rebeld.png"> Star Padawan <img src="icone/rebeld.png"></h1>
 
     <div id="Menu">
-
-        <button type="button" onclick="home()">Home</button>
-        <button type="button" onclick="post('divpost')">Postagem</button>
-        <button type="button" onclick="albun('divalbun')">Albuns</button>
-        <button type="button" onclick="tarefas('divafazer')">A Fazer</button>
+        <button type="button" id="btmenu" onclick="home()"> <img src="icone/mill.png" id="btnBusca" alt="Buscar">Home</button >
+        <button type="button" id="btmenu" onclick="post('divpost')"><img src="icone/r2d2.png" id="btnBusca" alt="Buscar">Postagem</button>
+        <button type="button" id="btmenu" onclick="album('divalbum')"><img src="icone/boba_fett.png" id="btnBusca" alt="Buscar">Albuns</button>
+        <button type="button" id="btmenu" onclick="tarefas('divafazer')"><img src="icone/sabre.png" id="btnBusca" alt="Buscar">A Fazer</button>
         <!-- <button type="button" onclick="usuario('divnome')">Home</button> -->
-        
     </div>
 
     <div id="divnome" style="display: none;">
-    <table id="tabela">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-            </tr>
-        </thead>
-        <tbody>
-     
-        </tbody>
-     </table>
-    </div>
-
-    <div id= "divpost" style="display: none";>
-    <table id="Postagens">
-        <thead>
-            <tr>
-                <th>Usuario</th>
-                <th>Id</th>
-                <th>Titulo</th>
-                <th>Postagem</th>
-            </tr>
-        </thead>
-        <tbody>
-        
-        </tbody>
-        </table>
-    </div>
-
-    <div id= "divalbun" style="display: none";>
-        <table id="albun">
+        <table id="usuario" border="20px"> 
             <thead>
                 <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>    
+    </div>
+
+    
+    <div class="tabela" id= "divpost" style="display: none";>
+        <table id="Postagens" border="20px">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Id</th>
+                    <th>Titulo</th>
+                    <th>Postagem</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+
+
+    <div class="tabela" id= "divalbum" style="display: none";>
+        <label for="divalbum">
+        <table id="album" border="20px">
+            <thead>
+                <tr id ='fundo'>
                     <th>Nome</th>
                     <th>Id</th>
                     <th>Titulo</th>
                 </tr>
             </thead>
             <tbody>
-            
+            </tbody>
+            </table>
+        </label>
+    </div>
+
+
+    <div class="tabela" id= "divafazer" style="display: none";>
+        <table id="afazer" border="20px">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Id</th>
+                    <th>Titulo</th>
+                    <th>Completo</th>
+                </tr>
+            </thead>
+            <tbody>
             </tbody>
             </table>
         </div>
 
-
-        <div id= "divafazer" style="display: none";>
-            <table id="afazer">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Id</th>
-                        <th>Titulo</th>
-                        <th>Completo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                </tbody>
-                </table>
-            </div>
-<!--  sem tempo de inserir mais informaçoes no testo
-            <div id= "corpo">
-            <p>Após se juntarem aos clãs, os iniciados eram ensinados aos básicos do caminho Jedi. Suas aulas incluíam vários testes e rituais que precisavam ser concluídos para avançar aos níveis mais elevados das artes Jedi. Entre as idades de quatro e oito anos, os jovens adquiriram as habilidades básicas de combate com sabres de luz usando sabres de treinamento de baixa potência para praticar a deflexão de tiros de blaster disparados por droides em treinamento.
-
-                O próximo passo do progresso de um iniciado era a construção de um sabre de luz genuíno—a arma principal de um Jedi que necessita primeiro de um cristal kyber. Essa missão leva a Coleta; uma tradição padrão que existe há séculos antes dos eventos das Guerras Clônicas, a Coleta testa as habilidades dos iniciados para localizar seu cristal particular pela Força. Ela requer que o iniciado viaje a Caverna do Cristal de Ilum, um planeta gelado localizado nas Regiões Desconhecidas e extremamente sagrado para a Ordem Jedi. Após adquirir seu cristal, os iniciados usam a telecinesia da Força para combinar os componentes necessários em um sabre de luz.</p>
-            </div> -->
-
-<script src="main.js">
-</script>
-
+<script src="main.js"></script>
 
 </body>
 </html>
