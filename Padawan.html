@@ -13,26 +13,22 @@
     <h1 id= topo style="color: gold;"><img src="icone/rebelde.png" width="48px" height="48px" > Star Padawan <img src="icone/rebelde.png" width="48px" height="48px"></h1>
 
     <div id="Menu">
-        <button type="button" id="btmenu" onclick="home()"> <img src="icone/mill.png" id="btnBusca" alt="Buscar">Home</button >
+        <button type="button" id="btmenu" onclick="home('divnome')"> <img src="icone/mill.png" id="btnBusca" alt="Buscar">Home</button >
         <button type="button" id="btmenu" onclick="post('divpost')"><img src="icone/r2d2.png" id="btnBusca" alt="Buscar">Postagem</button>
         <button type="button" id="btmenu" onclick="album('divalbum')"><img src="icone/sabre.png" id="btnBusca" alt="Buscar">Albuns</button>
         <button type="button" id="btmenu" onclick="tarefas('divafazer')"><img src="icone/boba_fett.png" id="btnBusca" alt="Buscar">A Fazer</button>
         <!-- <button type="button" onclick="usuario('divnome')">Home</button> -->
     </div>
 
-
-
-    <div id="divnome" style="display: none;">
-        <table id="usuario" border="20px"> 
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>    
+    <div id= "divnome"> 
+        <h2>Segue algumas informações sobre o que aconteceu aqui...</h2>
+        <ul>
+            <li>Não tente. Faça… ou não faça. Não há tentativa.</li>
+            <li>Luke, você descobrirá que muitas das verdades às quais nos prendemos dependem do nosso ponto de vista.</li>
+            <li>Seus olhos podem trair você, não confie neles.</li>
+            <li>A habilidade de falar não o torna inteligente.</li>
+            <li>Quanto maior o ego, maior a queda.</li>
+        </ul>
     </div>
 
     
@@ -85,7 +81,8 @@
         </div>
 
         <footer>
-            <a href="#topo">VOLTAR</a>
+            <a href="#topo">voltar</a>
+            <p>Desenvolvido por: Túlio Café</p>
         </footer>
 
 <script src="main.js"></script>

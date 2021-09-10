@@ -4,11 +4,16 @@ function apagatela(){
     document.getElementById('divalbum').style.display = 'none';
     document.getElementById('divafazer').style.display = 'none';
 }
-function home(){
-    document.getElementById('divnome').style.display = 'none';
-    document.getElementById('divpost').style.display = 'none';
-    document.getElementById('divalbum').style.display = 'none';
-    document.getElementById('divafazer').style.display = 'none';
+// function home(){
+//     document.getElementById('divnome').style.display = 'none';
+//     document.getElementById('divpost').style.display = 'none';
+//     document.getElementById('divalbum').style.display = 'none';
+//     document.getElementById('divafazer').style.display = 'none';
+// }
+
+function home(mostrar){
+    apagatela()
+    document.getElementById(mostrar).style = 'block'; 
 }
 
 function post(mostrar){

@@ -7,6 +7,13 @@ body{
 
 }
 
+#divnome{
+
+    color: rgba(255, 255, 255, 0.952);
+    font-size:larger;
+    padding: 50px;
+
+}
 
 #btmenu{
     background-color:gold;
@@ -22,7 +29,7 @@ body{
 h1{
     text-align: center;
     color: #000000;
-  font-family: 'Starjedi', sans-serif;
+    font-family: 'Starjedi', sans-serif;
   }
 
 table{
@@ -34,11 +41,22 @@ table{
 #Menu{
     text-align: center;
     align-items: center;
-    align-items: center;
+    height: 60px;
+    padding: 20px;
 
 }
 footer{
     text-align: center;
-    color: azure;
+    padding: 10px;
+    background-color: gold;
+}
+footer a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Starjedi', sans-serif;
+}
+h2{
+    text-align: center;
+    color: gold;
 }
 
