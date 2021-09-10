@@ -7,18 +7,20 @@
     <title>Padawan</title>
     <link rel="stylesheet" href="Estilo.css">
 
-</head>
+</head >
 <body>
 
-    <h1 style="color: gold;"><img src="icone/rebeld.png"> Star Padawan <img src="icone/rebeld.png"></h1>
+    <h1 id= topo style="color: gold;"><img src="icone/rebelde.png" width="48px" height="48px" > Star Padawan <img src="icone/rebelde.png" width="48px" height="48px"></h1>
 
     <div id="Menu">
         <button type="button" id="btmenu" onclick="home()"> <img src="icone/mill.png" id="btnBusca" alt="Buscar">Home</button >
         <button type="button" id="btmenu" onclick="post('divpost')"><img src="icone/r2d2.png" id="btnBusca" alt="Buscar">Postagem</button>
-        <button type="button" id="btmenu" onclick="album('divalbum')"><img src="icone/boba_fett.png" id="btnBusca" alt="Buscar">Albuns</button>
-        <button type="button" id="btmenu" onclick="tarefas('divafazer')"><img src="icone/sabre.png" id="btnBusca" alt="Buscar">A Fazer</button>
+        <button type="button" id="btmenu" onclick="album('divalbum')"><img src="icone/sabre.png" id="btnBusca" alt="Buscar">Albuns</button>
+        <button type="button" id="btmenu" onclick="tarefas('divafazer')"><img src="icone/boba_fett.png" id="btnBusca" alt="Buscar">A Fazer</button>
         <!-- <button type="button" onclick="usuario('divnome')">Home</button> -->
     </div>
+
+
 
     <div id="divnome" style="display: none;">
         <table id="usuario" border="20px"> 
@@ -81,6 +83,10 @@
             </tbody>
             </table>
         </div>
+
+        <footer>
+            <a href="#topo">VOLTAR</a>
+        </footer>
 
 <script src="main.js"></script>
 

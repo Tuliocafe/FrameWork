@@ -2,6 +2,7 @@
     font-weight: normal;font-style: normal;}
 
 body{
+    align-items: center;
     background-image: url("icone/star-wars-backgrounds.png");
 
 }
@@ -25,6 +26,19 @@ h1{
   }
 
 table{
+    align-items: center;
+    text-align: center;
     color: rgba(255, 255, 255, 0.952);
     background-color: #000000;
 }
+#Menu{
+    text-align: center;
+    align-items: center;
+    align-items: center;
+
+}
+footer{
+    text-align: center;
+    color: azure;
+}
+
